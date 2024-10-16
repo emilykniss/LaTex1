@@ -1,0 +1,102 @@
+\documentclass[12pt]{article}
+
+
+\usepackage{caption}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+\usepackage{minted}
+
+
+\author{Kniss Emily Sebastianovna, M3113 \\
+Zhuikov Artyom Sergeevich}
+\date{\today}
+\title{Working with LaTex 
+Labwork №3}
+
+
+\begin{document}
+
+\maketitle
+
+
+\newpage
+\tableofcontents
+
+\newpage
+
+\section{General description of the library}
+The program from the repository searches for the area and perimeter of a circle and a square
+
+\section{Description of the program files from the repository}
+There are three files in this repository: docs, circle.py and square.py
+
+\subsection{docs}
+The docs file contains mathematical formulas for calculating the area and perimeter of a circle, a square and a rectangle, which are used in programs: \\
+
+\subsubsection{Area}
+Circle:$$S = \pi R^{2}$$ 
+Square: $$S = a^{2}$$ 
+Rectangle: $$S = ab$$ 
+\subsubsection{Perimeter}
+Circle: $$P = 2\pi R$$
+Square:$$P = 4a$$
+Rectangle:$$P = 2a + 2b$$
+
+
+\subsection{circle.py}
+This program finds the area and perimeter of a circle using mathematical formulas: \\
+\\
+Circle area: $$S = \pi R^{2}$$
+Circle Perimeter: $$P = 2\pi R$$
+Here is the source code of the program:
+
+\begin{minted} {python}
+import math
+\end{minted}
+\textit{A library in Python that loads a standard math module that provides many mathematical functions and constants}
+
+\begin{minted} {python}
+def area(r):
+    return math.pi * r * r
+\end{minted}
+\textit{The function takes one argument r, which is the radius of the circle and uses the constant $\pi$ from the math module to calculate the area of a circle using the formula: $S = \pi R^{2}$}
+
+\begin{minted} {python}
+def perimeter(r):
+    return 2 * math.pi * r
+\end{minted}
+\textit{The function takes one argument r, which is the radius of the circle and uses the constant $\pi$ from the math module to calculate the perimeter of a circle using the formula: $P = 2\pi R$}
+
+\subsection{square.py}
+This program finds the area and perimeter of a square using mathematical formulas: \\
+\\
+Square area: $$S = a^{2}$$ 
+Square Perimeter: $$P = 4a$$
+\newpage 
+Here is the source code of the program:
+\begin{minted} {python}
+def area(a):
+    return a * a
+\end{minted}
+\textit{The function takes one argument a, which is the length of the side of the square and returns the area of the square calculated by the formula $S = a^{2}$}
+
+\begin{minted} {python} 
+def perimeter(a):
+    return 4 * a
+\end{minted}
+\textit{The function takes one argument a, which is the length of the side of the square and the square's perimeter, calculated by the formula $P = 4a$}
+
+
+
+
+\label{subsec:pythagoras}
+
+
+
+\section{Links}
+
+
+
+\end{document}
